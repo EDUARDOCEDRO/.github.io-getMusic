@@ -1,0 +1,169 @@
+:root {
+    --icon-color-1: #383838; /* Roxo azulado */
+    --icon-color-2: #383838; /* Roxo médio */
+    --icon-color-3: #383838; /* Roxo escuro */
+}
+
+.card .fa-tachometer-alt {
+    color: var(--icon-color-1);
+}
+.card .fa-headphones {
+    color: var(--icon-color-2);
+}
+.card .fa-mobile-alt {
+    color: var(--icon-color-3);
+}
+
+
+
+
+
+:root {
+    --primary-color:   #bcbcbc;
+    --secondary-color: #3b3b3b;
+    --dark-color: #707070 ;
+    --light-color: #3b3b3b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../Imgs/image02.jpg'); opacity: 0.9;
+    background-size: cover;
+    color: var(--dark-color);
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 12px rgba(20, 0, 61, 0.1);
+}
+
+.download-card {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(20, 0, 61, 0.1);
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #2f2f2f;
+    border-color: #3e3e3e;
+   
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(20, 0, 61, 0.1);
+}
+
+.quality-select {
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.flashes {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    max-width: 400px;
+}
+
+.alert {
+    box-shadow: 0 4px 12px rgb(255, 255, 255);
+}
+
+.how-to-use {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(20, 0, 61, 0.1);
+}
+
+.step-icon {
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+    color: rgb(12, 12, 12)
+}
+
+/* Estilos para a barra de progresso */
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fdfffc;
+    box-shadow: inset 0 1px 3px rgba(20, 0, 61, 0.1);
+}
+
+.progress-bar {
+    transition: width 0.5s ease;
+}
+
+#progressContainer {
+    animation: fadeIn 0.3s ease-out;
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .download-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.fw-bold{
+    color : white;
+
+}
